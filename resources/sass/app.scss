@@ -8,11 +8,15 @@
 @import "bootstrap/scss/bootstrap";
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 header {
     background-color: white;
+}
+
+img {
+    max-width: 100%;
 }
 
 .wrapper {
@@ -22,12 +26,21 @@ header {
 .jumbo {
     background-image: url("../img/jumbotron.jpg");
     height: 400px;
+    position: relative;
+}
+
+.title-badge {
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, 50%);
+    padding: 7px 30px;
+    color: white;
 }
 
 .list-group-item {
     background-color: inherit;
     border: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .card {
@@ -49,4 +62,20 @@ header {
     object-position: top;
     border: 0;
     border-radius: 0%;
+}
+
+button.btn {
+    border: 0;
+    border-radius: 0%;
+}
+
+.comics-nvabar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.comics-nvabar img {
+    height: 50px;
 }

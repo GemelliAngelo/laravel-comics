@@ -1,7 +1,7 @@
 <header>
     <div class="container">
 
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="{{Vite::asset("resources/img/dc-logo.png")}}" alt="DC">

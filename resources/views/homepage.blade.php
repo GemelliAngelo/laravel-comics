@@ -1,12 +1,17 @@
 @extends("layouts.master")
 
+@section('page-title')
+    Comics
+@endsection
+
 @section("content")
 
 @php
     $comics= config("comics")
 @endphp
 
-<div class="container py-5 my-3">
+<div class="jumbo"></div>
+<div class="container py-5">
     <div class="row g-5">
         
         @foreach ($comics as $comic)

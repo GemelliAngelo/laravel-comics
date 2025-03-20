@@ -7,14 +7,14 @@
 @endphp
 
 <div class="container py-5 my-3">
-    <div class="row row-cols-6 g-5">
+    <div class="row g-5">
         
         @foreach ($comics as $comic)
             
-        <div class="col">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xxl-2">
             <x-card>
-                <x-slot:cover>#</x-slot:cover>
-                Titolo
+                <x-slot:cover>{{$comic["thumb"]}}</x-slot:cover>
+                {{$comic["title"]}}
             </x-card>
         </div>
         @endforeach

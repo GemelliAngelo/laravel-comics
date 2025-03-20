@@ -1,6 +1,8 @@
 <div class="card">
-    <img src="{{$cover}}" class="card-img-top" alt="cover">
+    <div class="card-img-container">
+        <img src="{{$cover}}" class="card-img" alt="cover">
+    </div>
     <div class="card-body">
-      <h5 class="card-title">{{$slot}}</h5>
+      <h5 class="card-title text-center">{{strtoupper($slot)}}</h5>
     </div>
   </div>
